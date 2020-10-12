@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sanni's Journal</title>
+    <link rel="stylesheet"  href="./css/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Gamja+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <header>
+        <h1>Sanni's Journal</h1>
+        <h2>So fresh and so clean</h2>
+    </header>
+
+    <section id="add-note"> 
+        <button id="add-btn">Add a new Notes</button>
+        <div id="display"></div>
+    </section>
+
+    <!--Note modal starts here-->
+    <div id="add-note-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <form>
+            <p class="wn">
+                Write your new note!
+            </p>
+            <P id="alert"></p>
+            <div class="form-row">
+                <label>Note Title</label><br>
+               <input type="text" id="new-note-title">
+            </div>
+
+             <div class="form-row">
+               <label>Note</label><br>  
+               <textarea rows="8" id="new-note-content"></textarea>
+            </div>
+          </form>
+          
+          <hr>
+          <button id="ok" onclick="addNote()">ok</button> <button id="cancel">Cancel</button>
+          <div class="clear-float"></div>
+        </div>
+      
+      </div>
+      <!--Note modal Ends here-->
+     
+      
+    <main id="main">
+        <article>
+            <h2>14/05/23: Cookie Monster Cupcakes</h2>
+            <p id="article-image"><img src="images/cookiemonster.jpg" alt="cookie monster"></p>
+            <p>My favorite cartoon character is Cookie Monster, and my favorite dessert is cupcakes, so Cookie Monster cupcakes are the best of both worlds.
+            </p>
+
+            <p>Did you know? Cookie Monster once said, <q>Sometimes me think what is love, and then me think love is what last cookie is for. Me give up the last cookie for you.</q> I wonder if the same applies for cupcakes? (If so, I don't think I can ever love ANYONE!)
+            </p>
+        </article>
+        <article>
+            <h2>13/05/23: Spatulas</h2>
+            <p id="article-image"><img src="images/spatula.gif" alt="spatulas"></p>
+            <p>
+                Yesterday I went to the store and got some much-needed <a href="https://www.youtube.com/watch?v=2XbCWmY0eqY">spatulas!</a> (What better way to say I love myself than to buy myself a spatula?)
+            </p>
+        </article>
+    </main>
+    <hr>
+    <footer>
+    <h2>Stay connected</h2>
+    <p>Join my mailing list.</p>
+    <form>
+        <p><input type="text" placeholder="First name"></p>
+        <p><input type="text" placeholder="Email"></p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+    <p>&copy; 2023 Sanni. No Rights Reserved.</p>
+    </footer>
+    <script src="./js/mainscript.js"></script>
+</body>
+
+</html>
